@@ -82,7 +82,7 @@ public class Frame extends JPanel implements ActionListener, MouseListener, KeyL
         super.paintComponent(g);
         time += 20;
 
-        if (time % 100 == 0) {
+        if (time % 1000 == 0) {
             roundTimer -= 1;
             if (roundTimer == 0) {
                 nextRound();
